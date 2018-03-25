@@ -1,0 +1,22 @@
+{
+  "name": "iot",
+  "version": "1.0.0",
+  "description": "Iot Raspberry ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "author": "Jukka",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "express": "^4.16.2",
+    "mssql": "^4.1.0",
+    "tedious": "^2.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11"
+  }
+}
