@@ -20,6 +20,6 @@ jsonPayload = json.dumps({"temperature":sense.get_temperature()-10,"pressure":se
 print("Payload: "+jsonPayload)
 headers = {'Content-Type': 'application/json'}
 
-res = requests.post('YOUR Raspberry Pi IP ADDRESS HERE', data=jsonPayload, headers=headers)
+res = requests.post('http://192.168.100.12:5000/api/rpdata', data=jsonPayload, headers=headers)
 
 sys.exit()
